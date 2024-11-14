@@ -753,7 +753,10 @@ body:not(.device-mobile-optimized) .PFkO7r{margin-left:calc((100% - var(--site-w
 
 
 
-
+#comp-lnu0yuv7itemsContainer:hover li{
+    display: block !important;
+    background-color: white;
+}
 
 /* for mobile */
 
