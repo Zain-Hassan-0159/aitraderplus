@@ -155,8 +155,19 @@
                                                                                 </div>
                                                                             </div><span class="VGMdYn">Log In</span>
                                                                         </button></div>
+                                                                        
                                                                 </div>
+
                                                             </div>
+                                                        </div>
+                                                        <div class="MENU_AS_CONTAINER_TOGGLE_Close" 
+                                                        style="    position: absolute;
+                                                        right: 9px;
+                                                        top: 29px;
+                                                        font-size: 20px;
+                                                        font-weight: bold;"
+                                                        >
+                                                            X
                                                         </div>
                                                         <nav id="MENU_AS_CONTAINER_EXPANDABLE_MENU" aria-label="Site"
                                                             class="ruTj7Z MENU_AS_CONTAINER_EXPANDABLE_MENU wixui-vertical-menu">
@@ -191,9 +202,9 @@
                                                                                     data-testid="linkWrapper"
                                                                                     class="kGvnrc"><a
                                                                                         data-testid="linkElement"
-                                                                                        href="/vps"
+                                                                                        href="contact-us.html"
                                                                                         target="_self"
-                                                                                        class="xfxJ27 wixui-vertical-menu__item-label">VPS</a></span>
+                                                                                        class="xfxJ27 wixui-vertical-menu__item-label">Contact Us</a></span>
                                                                             </div>
                                                                         </li>
                                                                         <li data-testid="MENU_AS_CONTAINER_EXPANDABLE_MENU-0-1"
@@ -203,7 +214,7 @@
                                                                                     data-testid="linkWrapper"
                                                                                     class="kGvnrc"><a
                                                                                         data-testid="linkElement"
-                                                                                        href="/about"
+                                                                                        href="about-us.html"
                                                                                         target="_self"
                                                                                         class="xfxJ27 wixui-vertical-menu__item-label">About</a></span>
                                                                             </div>
@@ -221,6 +232,14 @@
                             </div>
                         </div>
                     </header>
+                    <script>
+                        document.querySelector('#MENU_AS_CONTAINER_TOGGLE').addEventListener('click', ()=>{
+                            document.querySelector('#MENU_AS_CONTAINER').classList.add("vissible")
+                        })
+                        document.querySelector('.MENU_AS_CONTAINER_TOGGLE_Close').addEventListener('click', ()=>{
+                            document.querySelector('#MENU_AS_CONTAINER').classList.remove("vissible")
+                        })
+                    </script>
                     <main id="PAGES_CONTAINER" class="PAGES_CONTAINER" tabindex="-1" data-main-content="true">
                         <div id="SITE_PAGES" class="JsJXaX SITE_PAGES">
                             <div id="zdxs4" class="dBAkHi zdxs4">
@@ -1558,8 +1577,6 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.6.0/webcomponents-loader.js"></script>
     <script src="form.js"></script>
-
-
 
 </body>
 

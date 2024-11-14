@@ -255,18 +255,20 @@
                                                             data-testid="mesh-container-content">
                                                             <div id="comp-lkmop2s7"
                                                                 class="MazNVa comp-lkmop2s7 wixui-image rYiAuL"><a
-                                                                    data-testid="linkElement" href="" target="_self"
+                                                                    data-testid="linkElement"
+                                                                    href="" target="_self"
                                                                     class="j7pOnl"><wow-image id="img_comp-lkmop2s7"
                                                                         class="HlRz5e BI8PVQ"
                                                                         data-image-info="{&quot;containerId&quot;:&quot;comp-lkmop2s7&quot;,&quot;displayMode&quot;:&quot;fill&quot;,&quot;targetWidth&quot;:60,&quot;targetHeight&quot;:56,&quot;isLQIP&quot;:false,&quot;imageData&quot;:{&quot;width&quot;:320,&quot;height&quot;:298,&quot;uri&quot;:&quot;655a55_29ada22f1528479da82188365a7b8111~mv2.png&quot;,&quot;name&quot;:&quot;ai-logo.png&quot;,&quot;displayMode&quot;:&quot;fill&quot;}}"
                                                                         data-motion-part="BG_IMG" data-bg-effect-name=""
                                                                         data-has-ssr-src="">
-                                                                        <img src="assets/images/Logo.png"
+                                                                        <img
+                                                                            src="assets/images/Logo.png"
                                                                             alt="ai-logo.png"
                                                                             style="width:60px;height:56px;object-fit:cover"
-                                                                            width="60" height="56"></wow-image></a>
-                                                            </div>
-
+                                                                            width="60" height="56"
+                                                                           ></wow-image></a></div>
+                                             
                                                             <div id="MENU_AS_CONTAINER_TOGGLE"
                                                                 class="gIn6Wf MENU_AS_CONTAINER_TOGGLE wixui-mobile-menu__icon"
                                                                 role="button" aria-haspopup="dialog"
@@ -328,8 +330,19 @@
                                                                                 </div>
                                                                             </div><span class="VGMdYn">Log In</span>
                                                                         </button></div>
+                                                                        
                                                                 </div>
+
                                                             </div>
+                                                        </div>
+                                                        <div class="MENU_AS_CONTAINER_TOGGLE_Close" 
+                                                        style="    position: absolute;
+                                                        right: 9px;
+                                                        top: 29px;
+                                                        font-size: 20px;
+                                                        font-weight: bold;"
+                                                        >
+                                                            X
                                                         </div>
                                                         <nav id="MENU_AS_CONTAINER_EXPANDABLE_MENU" aria-label="Site"
                                                             class="ruTj7Z MENU_AS_CONTAINER_EXPANDABLE_MENU wixui-vertical-menu">
@@ -339,7 +352,8 @@
                                                                     class="UNhuLu YLBS9j fqtSRp wixui-vertical-menu__item QqwXfj">
                                                                     <div data-testid="itemWrapper" class="fEGEM_"><span
                                                                             data-testid="linkWrapper" class="kGvnrc"><a
-                                                                                data-testid="linkElement" href=""
+                                                                                data-testid="linkElement"
+                                                                                href=""
                                                                                 target="_self"
                                                                                 class="xfxJ27 wixui-vertical-menu__item-label">TRADING</a></span><button
                                                                             aria-expanded="false" aria-haspopup="true"
@@ -363,8 +377,9 @@
                                                                                     data-testid="linkWrapper"
                                                                                     class="kGvnrc"><a
                                                                                         data-testid="linkElement"
-                                                                                        href="/vps" target="_self"
-                                                                                        class="xfxJ27 wixui-vertical-menu__item-label">VPS</a></span>
+                                                                                        href="contact-us.html"
+                                                                                        target="_self"
+                                                                                        class="xfxJ27 wixui-vertical-menu__item-label">Contact Us</a></span>
                                                                             </div>
                                                                         </li>
                                                                         <li data-testid="MENU_AS_CONTAINER_EXPANDABLE_MENU-0-1"
@@ -374,7 +389,8 @@
                                                                                     data-testid="linkWrapper"
                                                                                     class="kGvnrc"><a
                                                                                         data-testid="linkElement"
-                                                                                        href="/about" target="_self"
+                                                                                        href="about-us.html"
+                                                                                        target="_self"
                                                                                         class="xfxJ27 wixui-vertical-menu__item-label">About</a></span>
                                                                             </div>
                                                                         </li>
@@ -391,6 +407,14 @@
                             </div>
                         </div>
                     </header>
+                    <script>
+                        document.querySelector('#MENU_AS_CONTAINER_TOGGLE').addEventListener('click', ()=>{
+                            document.querySelector('#MENU_AS_CONTAINER').classList.add("vissible")
+                        })
+                        document.querySelector('.MENU_AS_CONTAINER_TOGGLE_Close').addEventListener('click', ()=>{
+                            document.querySelector('#MENU_AS_CONTAINER').classList.remove("vissible")
+                        })
+                    </script>
                     <main id="PAGES_CONTAINER" class="PAGES_CONTAINER" tabindex="-1" data-main-content="true">
                         <div id="SITE_PAGES" class="JsJXaX SITE_PAGES">
                             <div id="kwwj9" class="dBAkHi kwwj9">
